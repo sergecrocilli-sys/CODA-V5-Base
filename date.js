@@ -1,0 +1,1 @@
+window.CODA_DATE={formatTodayFr(){const f=new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});const t=f.format(new Date());return t.charAt(0).toUpperCase()+t.slice(1)},renderTodayLabel(id){const el=document.getElementById(id);if(el)el.textContent="Analyse locale — "+this.formatTodayFr()}};
